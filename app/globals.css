@@ -1,33 +1,32 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* Import the carousel CSS here as well */
+@import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
+/* Add any other global styles you need */
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.carousel-image {
+  width: 75%; /* Adjust width as needed (percentage or fixed value) */
+  height: 75%; /* Maintain aspect ratio */
+  margin: 0 auto; /* Centers the carousel horizontally */
+}
+.title-container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.header-title {
+  font-size: x-large;
+  margin: 0 auto;
+  padding: 5px;
+}
+.header-subtitle {
+  margin: 0 auto;
+  padding: 5px;
+  font-family: fantasy;
+  color: darkslategrey;
+  font-size: 18px;
 }
