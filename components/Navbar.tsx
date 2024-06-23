@@ -44,6 +44,7 @@ const NavItem = styled.div`
 const NavLink = styled.a`
   @media (max-width: 768px) {
     padding: 1rem 1rem;
+    margin-right: 0.5rem;
   }
   color: black;
   text-decoration: none;

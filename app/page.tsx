@@ -50,7 +50,7 @@ const HomePage: React.FC = () => {
     <Layout>
       <TitleContainer>
         <TextWrapper>
-          <span className="header-title">Welcome to Our Hospital</span>
+          <span className="header-title">Your trusted Hospital</span>
           <span className="header-subtitle">Where healing meets humanity.</span>
         </TextWrapper>
         <CallUsButton>

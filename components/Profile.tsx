@@ -26,6 +26,10 @@ const Image = styled.img`
   width: 500px;
   height: 350px;
   border-radius: 20px;
+  @media (max-width: 768px) {
+    width: 380px;
+    height: 260px;
+  }
 `;
 
 const Title = styled.h1`

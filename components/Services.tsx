@@ -21,6 +21,9 @@ const ServicesText = styled.p`
   line-height: 1.5; /* Adjust line height as needed */
   text-align: center; /* Adjust text alignment as needed */
   padding: 10px;
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
 `;
 
 const cards = [
@@ -62,9 +65,16 @@ const cards = [
   {
     title: "Caridology",
     content:
-      " Cardiology is the study of the heart. Cardiology is a branch of medicine that deals with disorders of the heart and the cardiovascular system. The field includes medical diagnosis and treatment of congenital heart defects, coronary artery disease, heart failure, valvular heart disease, etc.",
+      "Cardiology is the study of the heart. Cardiology is a branch of medicine that deals with disorders of the heart and the cardiovascular system. The field includes medical diagnosis and treatment of congenital heart defects, coronary artery disease, heart failure, valvular heart disease, etc.",
     imageUrl:
       "https://aakashhospital.com/wp-content/uploads/2023/04/Cardiology.png",
+  },
+  {
+    title: "Ophthalmology",
+    content:
+      "Ophthalmology is a clinical and surgical specialty within medicine that deals with the diagnosis and treatment of eye disorders. A former term is oculism.",
+    imageUrl:
+      "https://aakashhospital.com/wp-content/uploads/2023/04/Ophthalmology.png",
   },
 ];
 const Services = () => {
