@@ -82,7 +82,7 @@ const Profile: React.FC<ProfileProps> = () => {
           of our patient, staff, and nation.
         </Text>
         <Text>
-          Join us in our Journey as we shape ‘Healthcare' for a better tomorrow.
+          Join us in our Journey as we shape Healthcare for a better tomorrow.
         </Text>
         {/* <Button>READ MORE ABOUT US</Button> */}
       </ProfileContent>
