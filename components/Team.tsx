@@ -1,7 +1,9 @@
-import React from 'react';
-import styled, { css } from 'styled-components';
+import Link from "next/link";
+import React from "react";
+import styled, { css } from "styled-components";
 
 interface Doctor {
+  id: number,
   name: string;
   speciality: string;
   qualifications: string[];
@@ -30,22 +32,25 @@ const DoctorsContainer = styled.div`
 `;
 
 const DoctorCard = styled.div`
-  width: 300px;
+  width: 400px;
   border: 1px solid #ccc;
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
 `;
 
+const DoctorCardContent = styled.div`
+  margin-left: 15px;
+`;
 const DoctorImage = styled.img`
-  width: 100%;
+  width: 50%;
   height: auto;
   border-radius: 5px;
-  margin-bottom: 10px;
 `;
 
-const DoctorName = styled.h2`
-  font-size: 1.5em;
+const DoctorName = styled.h3`
+  font-size: 1.2em;
   margin-bottom: 5px;
   font-weight: bold;
 `;
@@ -88,77 +93,89 @@ const ViewAllButton = styled.button`
 const Team: React.FC = () => {
   const doctors: Doctor[] = [
     {
-      name: 'Dr. Karan Singh Yadav',
-      speciality: 'ENT Surgeon',
-      qualifications: ['MBBS', 'DLO', 'DNB'],
-      image: '/path/to/chandan-das.jpg', // Replace with actual image path
+      id: 1,
+      name: "Dr. Karan Singh Yadav",
+      speciality: "ENT Surgeon",
+      qualifications: ["MBBS", "DLO", "DNB"],
+      image: "/Dr-Karan-Yadav.jpeg", 
     },
     {
-      name: 'Dr. Pravin Kumari Yadav',
-      speciality: 'Obstetrics and Gynaecology',
-      qualifications: ['MBBS', 'MS', 'Medicine'],
-      image: '/path/to/rahul-trehan.jpg', // Replace with actual image path
+      id: 2,
+      name: "Dr. Pravin Kumari Yadav",
+      speciality: "Obstetrics and Gynaecology",
+      qualifications: ["MBBS", "MS", "Medicine"],
+      image: "/path/to/rahul-trehan.jpg", 
     },
     {
-        name: 'Dr. Hemant Chaturvedi',
-        speciality: 'Orthopedic',
-        qualifications: ['MBBS', 'MS'],
-        image: '/path/to/rahul-trehan.jpg', // Replace with actual image path
-      },
-    {
-      name: 'Dr. Mayank Singhal',
-      speciality: 'General and Laparoscopic Surgery',
-      qualifications: ['MBBS', 'MS'],
-      image: '/path/to/anshul-mittal.jpg', // Replace with actual image path
+      id: 3,
+      name: "Dr. Hemant Chaturvedi",
+      speciality: "Orthopedic",
+      qualifications: ["MBBS", "MS"],
+      image: "/path/to/rahul-trehan.jpg", 
     },
     {
-      name: 'Dr. Suresh K. Gupta',
-      speciality: 'Eye Surgeon',
-      qualifications: ['MBBS', 'MS'],
-      image: '/path/to/rk-mehra.jpg', // Replace with actual image path
+      id: 4,
+      name: "Dr. Mayank Singhal",
+      speciality: "General and Laparoscopic Surgery",
+      qualifications: ["MBBS", "MS"],
+      image: "/path/to/anshul-mittal.jpg", 
     },
     {
-      name: 'Dr. Mudit Mittal',
-      speciality: 'Pediatrics',
-      qualifications: ['MBBS, MD'],
-      image: '/path/to/amodita-ahuja.jpg', // Replace with actual image path
+      id: 5,
+      name: "Dr. Suresh K. Gupta",
+      speciality: "Eye Surgeon",
+      qualifications: ["MBBS", "MS"],
+      image: "/path/to/rk-mehra.jpg", 
     },
     {
-      name: 'Dr. Gopesh Bansal',
-      speciality: 'Pediatrics',
-      qualifications: ['MBBS, MD'],
-      image: '/path/to/sonal-gupta.jpg', // Replace with actual image path
+      id: 6,
+      name: "Dr. Mudit Mittal",
+      speciality: "Pediatrics",
+      qualifications: ["MBBS", "MD"],
+      image: "/path/to/amodita-ahuja.jpg", 
     },
     {
-        name: 'Dr. B.K. Garg',
-        speciality: 'Physician',
-        qualifications: ['MBBS, MD'],
-        image: '/path/to/sonal-gupta.jpg', // Replace with actual image path
-      },
-      {
-        name: 'Dr.Yogesh Taneja',
-        speciality: 'Urologist',
-        qualifications: ['MBBS, MS, MCH'],
-        image: '/path/to/sonal-gupta.jpg', // Replace with actual image path
-      },
-      {
-        name: 'Dr.Harshita',
-        speciality: 'Physiotherapist',
-        qualifications: ['B.P.T'],
-        image: '/path/to/sonal-gupta.jpg', // Replace with actual image path
-      },
-      {
-        name: 'Dr.Rajendra Tanwar',
-        speciality: 'Optho',
-        qualifications: ['MBBS, MS'],
-        image: '/path/to/sonal-gupta.jpg', // Replace with actual image path
-      },
-      {
-        name: 'Dr.Dhirendra',
-        speciality: 'Dental surgeon',
-        qualifications: ['BDS'],
-        image: '/path/to/sonal-gupta.jpg', // Replace with actual image path
-      },
+      id: 7,
+      name: "Dr. Gopesh Bansal",
+      speciality: "Pediatrics",
+      qualifications: ["MBBS", "MD"],
+      image: "/path/to/sonal-gupta.jpg", 
+    },
+    {
+      id: 8,
+      name: "Dr. B.K. Garg",
+      speciality: "Physician",
+      qualifications: ["MBBS", "MD"],
+      image: "/Dr-BK-Garg.jpeg", 
+    },
+    {
+      id: 9,
+      name: "Dr. Yogesh Taneja",
+      speciality: "Urologist",
+      qualifications: ["MBBS", "MS", "MCH"],
+      image: "/path/to/sonal-gupta.jpg", 
+    },
+    {
+      id: 10,
+      name: "Dr. Harshita",
+      speciality: "Physiotherapist",
+      qualifications: ["B.P.T"],
+      image: "/path/to/sonal-gupta.jpg", 
+    },
+    {
+      id: 11,
+      name: "Dr. Rajendra Tanwar",
+      speciality: "Optho",
+      qualifications: ["MBBS", "Family physician"],
+      image: "/path/to/sonal-gupta.jpg", 
+    },
+    {
+      id: 12,
+      name: "Dr. Dhirendra",
+      speciality: "Dental surgeon",
+      qualifications: ["BDS"],
+      image: "/path/to/sonal-gupta.jpg", 
+    },
   ];
 
   return (
@@ -167,15 +184,21 @@ const Team: React.FC = () => {
       <DoctorsContainer>
         {doctors.map((doctor) => (
           <DoctorCard key={doctor.name}>
-            {/* <DoctorImage src={doctor.image} alt={doctor.name} /> */}
-            <DoctorName>{doctor.name}</DoctorName>
-            <DoctorSpeciality>{doctor.speciality}</DoctorSpeciality>
-            <Qualifications>
-              {doctor.qualifications.map((qualification) => (
-                <Qualification key={qualification}>{qualification}</Qualification>
-              ))}
-            </Qualifications>
-            <ViewProfileButton>View Profile</ViewProfileButton>
+            <DoctorImage src={doctor.image} alt={doctor.name} />
+            <DoctorCardContent>
+              <DoctorName>{doctor.name}</DoctorName>
+              <DoctorSpeciality>{doctor.speciality}</DoctorSpeciality>
+              <Qualifications>
+                {doctor.qualifications.map((qualification) => (
+                  <Qualification key={qualification}>
+                    {qualification}
+                  </Qualification>
+                ))}
+              </Qualifications>
+              <Link href={`/profile/${doctor.id}`}>
+              <ViewProfileButton>View Profile</ViewProfileButton>
+              </Link>
+            </DoctorCardContent>
           </DoctorCard>
         ))}
       </DoctorsContainer>

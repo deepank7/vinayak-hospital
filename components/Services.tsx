@@ -63,7 +63,7 @@ const cards = [
       "https://aakashhospital.com/wp-content/uploads/2023/04/Urology.png",
   },
   {
-    title: "Caridology",
+    title: "Cardiology",
     content:
       "Cardiology is the study of the heart. Cardiology is a branch of medicine that deals with disorders of the heart and the cardiovascular system. The field includes medical diagnosis and treatment of congenital heart defects, coronary artery disease, heart failure, valvular heart disease, etc.",
     imageUrl:

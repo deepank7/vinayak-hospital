@@ -1,3 +1,4 @@
+import Link from "next/link";
 import * as React from "react";
 import styled, { css } from "styled-components";
 
@@ -65,6 +66,14 @@ const Qualification = styled.span`
   padding: 5px 10px;
   border-radius: 5px;
 `;
+const ViewProfileButton = styled.button`
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+`;
 
 const degress = ["MBBS", "MD"];
 const Profile: React.FC<ProfileProps> = () => {
@@ -88,7 +97,9 @@ const Profile: React.FC<ProfileProps> = () => {
         <Text>
           Join us in our Journey as we shape Healthcare for a better tomorrow.
         </Text>
-        {/* <Button>READ MORE ABOUT US</Button> */}
+        <Link href={`/profile/13`}>
+        <ViewProfileButton>View Profile</ViewProfileButton>
+        </Link>
       </ProfileContent>
     </Container>
   );
