@@ -76,14 +76,16 @@ const DoctorIndividualProfile = ({ params }: { params: { slug: string } }) => {
       name: "Dr. Mayank Singhal",
       speciality: "General and Laparoscopic Surgery",
       qualifications: ["MBBS", "MS"],
-      image: "/path/to/anshul-mittal.jpg",
+      image: "/Dr-Mayank-Singhal.jpeg",
+      bio: 'Mbbs Ms Fmas Fiages Fiscp, Laser and Laproscopic surgeon, Rmc 31523'
     },
     {
       id: 5,
       name: "Dr. Suresh K. Gupta",
       speciality: "Eye Surgeon",
       qualifications: ["MBBS", "MS"],
-      image: "/path/to/rk-mehra.jpg",
+      image: "/Dr-Suresh-Gupta.jpeg",
+      bio: 'PHACO SURGEON ,RMC 020079 ,LIFE MEMBER OF IMA ROS DOS AIOS ,MBBS PASSED FROM SMS MEDICAL COLLEGE JAIPUR BATCH 94, MS PASSED FROM JLN MEDICAL COLLEGE AJMER , PHACO TRAINING FROM SSG EYE INSTITUTE RAJKOT',
     },
     {
       id: 6,
@@ -141,7 +143,7 @@ const DoctorIndividualProfile = ({ params }: { params: { slug: string } }) => {
       speciality: "Consultant Anaesthesia and Intensive care unit",
       qualifications: ["MBBS", "MD"],
       image: "/Dr-Sanjay-Sharma.jpeg",
-      bio: 'MBBS from SMS medical college Jaipur , MD from JLN medical college Ajmer ,Senior Residency from Apollo hospital New Delhi ,Specialist in anaesthesia and intensive care , pain management ,Experience of more than 25 years'
+      bio: 'MBBS from SMS medical college Jaipur , MD from JLN medical college Ajmer ,Senior Residency from Apollo hospital New Delhi ,Specialist in anaesthesia intensive care & pain management ,Experience of more than 25 years'
     },
   ];
   const filteredDoctor = doctors.find(

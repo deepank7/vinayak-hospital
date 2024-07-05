@@ -45,7 +45,7 @@ const DoctorCardContent = styled.div`
 `;
 const DoctorImage = styled.img`
   width: 50%;
-  height: auto;
+  height: 220px;
   border-radius: 5px;
 `;
 
@@ -118,14 +118,14 @@ const Team: React.FC = () => {
       name: "Dr. Mayank Singhal",
       speciality: "General and Laparoscopic Surgery",
       qualifications: ["MBBS", "MS"],
-      image: "/path/to/anshul-mittal.jpg", 
+      image: "/Dr-Mayank-Singhal.jpeg", 
     },
     {
       id: 5,
       name: "Dr. Suresh K. Gupta",
       speciality: "Eye Surgeon",
       qualifications: ["MBBS", "MS"],
-      image: "/path/to/rk-mehra.jpg", 
+      image: "/Dr-Suresh-Gupta.jpeg", 
     },
     {
       id: 6,

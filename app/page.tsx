@@ -7,6 +7,7 @@ import Services from "@/components/Services";
 import Profile from "@/components/Profile";
 import styled from "styled-components";
 import Team from "@/components/Team";
+import ICUSection from "@/components/ICUSection";
 
 const CallUsButton = styled.button`
   border-radius: 25px;
@@ -68,6 +69,7 @@ const HomePage: React.FC = () => {
       <Services />
       <Profile />
       <Team />
+      <ICUSection />
     </Layout>
   );
 };
