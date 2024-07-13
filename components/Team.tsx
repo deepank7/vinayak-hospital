@@ -176,6 +176,13 @@ const Team: React.FC = () => {
       qualifications: ["BDS"],
       image: "/path/to/sonal-gupta.jpg", 
     },
+    {
+      id: 13,
+      name: "Dr. DP Singh Tomar",
+      speciality: "Surgery",
+      qualifications: ["MBBS", "MS"],
+      image: "/Dr-DP-Singh.jpeg", 
+    },
   ];
 
   return (

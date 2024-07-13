@@ -139,6 +139,14 @@ const DoctorIndividualProfile = ({ params }: { params: { slug: string } }) => {
     },
     {
       id: 13,
+      name: "Dr. DP Singh Tomar",
+      speciality: "Surgery",
+      qualifications: ["MBBS", "MD"],
+      image: "/Dr-DP-Singh.jpeg", 
+      bio: 'MBBS from Maulana Azad Medical College New Delhi 2000 , MS Surgery from UCMS Delhi , 6 years experience in Delhi ,ESI hospital Gurgaon 13 years'
+    },
+    {
+      id: 14,
       name: "Dr. Sanjay Sharma",
       speciality: "Consultant Anaesthesia and Intensive care unit",
       qualifications: ["MBBS", "MD"],
