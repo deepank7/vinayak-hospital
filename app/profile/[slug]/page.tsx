@@ -147,6 +147,13 @@ const DoctorIndividualProfile = ({ params }: { params: { slug: string } }) => {
     },
     {
       id: 14,
+      name: "Dr praveen yadav ",
+      speciality: "Urology",
+      qualifications: ["MBBS", "MS", "MCH"],
+      image: "/Dr-Praveen-Yadav.jpeg", 
+    },
+    {
+      id: 15,
       name: "Dr. Sanjay Sharma",
       speciality: "Consultant Anaesthesia and Intensive care unit",
       qualifications: ["MBBS", "MD"],

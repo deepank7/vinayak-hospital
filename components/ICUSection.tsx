@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import styled from "styled-components";
 
 const SectionWrapper = styled.div`
@@ -35,16 +35,20 @@ const ICUSectionComponent = () => {
       <ICUContent>
         <ICUSection>
           <ICUTitle>Bed Availability</ICUTitle>
-          <ICUParagraph>10 beds available</ICUParagraph>
+          <ICUParagraph>6 beds available</ICUParagraph>
         </ICUSection>
         <ICUSection>
           <ICUTitle>ICU Team</ICUTitle>
           <ICUParagraph>
-            Dr. Sanjay Sharma, ICU Head
+            Dr. Sanjay Sharma
             <br />
-            Dr. ......
+            Dr Rajendra Tanwar
             <br />
-            ... (list of ICU team members)
+            Dr Satyam gupta
+            <br />
+            Dr BK Garg
+            <br />
+            Dr Dharmender Pal Singh
           </ICUParagraph>
         </ICUSection>
         <ICUSection>
@@ -52,31 +56,13 @@ const ICUSectionComponent = () => {
           <ICUParagraph>
             Ventilator support
             <br />
-            Dialysis
+            BIPAP support
             <br />
             Cardiac monitoring
             <br />
-            ... (list of ICU services)
-          </ICUParagraph>
-        </ICUSection>
-        <ICUSection>
-          <ICUTitle>Visiting Hours and Guidelines</ICUTitle>
-          <ICUParagraph>
-            Visiting hours: 10am - 8pm
+            Invasive and non invasive monitoring
             <br />
-            Only 2 visitors allowed at a time
-            <br />
-            ... (list of visiting hours and guidelines)
-          </ICUParagraph>
-        </ICUSection>
-        <ICUSection>
-          <ICUTitle>ICU FAQs</ICUTitle>
-          <ICUParagraph>
-            Q: What is the ICU?
-            <br />
-            A: The ICU is a specialized unit for critically ill patients.
-            <br />
-            ... (list of FAQs)
+            Neonatal care
           </ICUParagraph>
         </ICUSection>
       </ICUContent>

@@ -183,6 +183,13 @@ const Team: React.FC = () => {
       qualifications: ["MBBS", "MS"],
       image: "/Dr-DP-Singh.jpeg", 
     },
+    {
+      id: 14,
+      name: "Dr praveen yadav ",
+      speciality: "Urology",
+      qualifications: ["MBBS", "MS", "MCH"],
+      image: "/Dr-Praveen-Yadav.jpeg", 
+    },
   ];
 
   return (
