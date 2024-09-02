@@ -62,14 +62,16 @@ const DoctorIndividualProfile = ({ params }: { params: { slug: string } }) => {
       name: "Dr. Pravin Kumari Yadav",
       speciality: "Obstetrics and Gynaecology",
       qualifications: ["MBBS", "MS", "Medicine"],
-      image: "/path/to/rahul-trehan.jpg",
+      image: "/Dr-Pravin-Kumari.jpeg",
+      bio: `MBBS , MS (obs & gynaecologist)`,
     },
     {
       id: 3,
       name: "Dr. Hemant Chaturvedi",
       speciality: "Orthopedic",
       qualifications: ["MBBS", "MS"],
-      image: "/path/to/rahul-trehan.jpg",
+      image: "/Dr-Hemant-Chaturvedi.jpeg",
+      bio: `MBBS SMS medical college Jaipur, DNB Orthopedics NIMS Jaipur, Formerly at Medanta Hospital Gurgaon`,
     },
     {
       id: 4,

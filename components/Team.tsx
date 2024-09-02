@@ -104,14 +104,14 @@ const Team: React.FC = () => {
       name: "Dr. Pravin Kumari Yadav",
       speciality: "Obstetrics and Gynaecology",
       qualifications: ["MBBS", "MS", "Medicine"],
-      image: "/path/to/rahul-trehan.jpg", 
+      image: "/Dr-Pravin-Kumari.jpeg", 
     },
     {
       id: 3,
       name: "Dr. Hemant Chaturvedi",
       speciality: "Orthopedic",
       qualifications: ["MBBS", "MS"],
-      image: "/path/to/rahul-trehan.jpg", 
+      image: "/Dr-Hemant-Chaturvedi.jpeg", 
     },
     {
       id: 4,
