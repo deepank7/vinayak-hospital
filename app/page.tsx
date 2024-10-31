@@ -8,6 +8,7 @@ import Profile from "@/components/Profile";
 import styled from "styled-components";
 import Team from "@/components/Team";
 import ICUSection from "@/components/ICUSection";
+import DiwaliBanner from "@/components/DiwaliBanner";
 
 const CallUsButton = styled.button`
   border-radius: 25px;
@@ -47,8 +48,14 @@ const TextWrapper = styled.div`
 `;
 
 const HomePage: React.FC = () => {
+  const today = new Date();
+  const endDate = new Date('2024-11-02');
+
+  // Check if the banner should be displayed
+  const showBanner = today <= endDate;
   return (
     <Layout>
+      {showBanner && <DiwaliBanner />}
       <TitleContainer>
         <TextWrapper>
           <span className="header-title">Your trusted Hospital</span>
