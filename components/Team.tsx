@@ -111,7 +111,7 @@ const Team: React.FC = () => {
       name: "Dr. Hemant Chaturvedi",
       speciality: "Orthopedic",
       qualifications: ["MBBS", "MS"],
-      image: "/Dr-Hemant-Chaturvedi.jpeg", 
+      image: "/Dr-Hemant.jpeg", 
     },
     {
       id: 4,
@@ -153,7 +153,7 @@ const Team: React.FC = () => {
       name: "Dr. Yogesh Taneja",
       speciality: "Urologist",
       qualifications: ["MBBS", "MS", "MCH"],
-      image: "/path/to/sonal-gupta.jpg", 
+      image: "/Dr-Yogesh.jpeg", 
     },
     {
       id: 10,

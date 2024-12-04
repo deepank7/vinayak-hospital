@@ -9,6 +9,7 @@ import styled from "styled-components";
 import Team from "@/components/Team";
 import ICUSection from "@/components/ICUSection";
 import DiwaliBanner from "@/components/DiwaliBanner";
+import TPA from "@/components/TPA";
 
 const CallUsButton = styled.button`
   border-radius: 25px;
@@ -77,6 +78,7 @@ const HomePage: React.FC = () => {
       <Profile />
       <Team />
       <ICUSection />
+      <TPA />
     </Layout>
   );
 };

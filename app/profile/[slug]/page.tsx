@@ -70,7 +70,7 @@ const DoctorIndividualProfile = ({ params }: { params: { slug: string } }) => {
       name: "Dr. Hemant Chaturvedi",
       speciality: "Orthopedic",
       qualifications: ["MBBS", "MS"],
-      image: "/Dr-Hemant-Chaturvedi.jpeg",
+      image: "/Dr-Hemant.jpeg",
       bio: `MBBS SMS medical college Jaipur, DNB Orthopedics NIMS Jaipur, Formerly at Medanta Hospital Gurgaon`,
     },
     {
@@ -115,8 +115,8 @@ const DoctorIndividualProfile = ({ params }: { params: { slug: string } }) => {
       id: 9,
       name: "Dr. Yogesh Taneja",
       speciality: "Urologist",
-      qualifications: ["MBBS", "MS", "MCH"],
-      image: "/path/to/sonal-gupta.jpg",
+      qualifications: ["MBBS", "MS", "MCH", "DNB (urology)"],
+      image: "/Dr-Yogesh.jpeg",
     },
     {
       id: 10,
